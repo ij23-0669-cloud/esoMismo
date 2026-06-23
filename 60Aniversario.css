@@ -270,7 +270,7 @@ section { padding: 120px 0; scroll-margin-top: 120px; }
 .video-placeholder:hover .play-btn { transform: scale(1.1); background: var(--accent); color: var(--dark-bg); }
 .video-caption { text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; font-style: italic; }
 
-/* Voces Yisuscry Rediseñado */
+/* Voces UNPHU Rediseñado */
 .voices { background: linear-gradient(135deg, rgba(0,115,55,0.92), rgba(36,80,102,0.92)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover; color: var(--text-light); text-align: center; }
 .voices-intro { max-width: 720px; margin: 0 auto 50px; color: var(--text-light); font-size: 1.15rem; line-height: 1.8; }
 .voices-subtitle { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.3rem; margin: 50px 0 30px; color: var(--text-light); text-transform: uppercase; letter-spacing: 1.5px; }
