@@ -6,7 +6,7 @@
     <title>60 Aniversario | Universidad Yisuscry</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="60Aniversario.css">
 </head>
 <body>
@@ -14,25 +14,93 @@
     <header>
         <div class="nav-container">
             <a href="#" class="logo">Yisuscry <span>60</span></a>
+            <nav class="main-nav">
+                <a href="#oferta">Oferta Académica</a>
+                <a href="#admisiones">Admisiones</a>
+                <a href="#investigacion">Investigación</a>
+                <a href="#campus">Campus</a>
+                <a href="#sobre">Sobre Yisuscry</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Buscar">🔍</button>
+                <button class="btn btn-primary header-cta">Aplicar</button>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero hero-landing">
         <div class="hero-content fade-up">
             <span class="badge-60">60 Aniversario</span>
-            <h1>60 Años Forjando el Futuro</h1>
-            <p>Honrando nuestro legado, inspirando a las nuevas generaciones.</p>
+            <h1>Bienvenidos a la <span class="hero-highlight">Vida Yisuscry</span></h1>
+            <p class="hero-subtitle">Seis décadas de excelencia académica, innovación y compromiso con la sociedad.</p>
             <div class="cta-group">
-                <a href="#agenda" class="btn btn-primary">¡Únete a la Celebración!</a>
-                <a href="#videos" class="btn btn-secondary">Ver Recorrido Visual</a>
+                <a href="#agenda" class="btn btn-primary">Explorar eventos</a>
+                <a href="#videos" class="btn btn-secondary">Ver recorrido</a>
             </div>
         </div>
     </section>
 
-    <section class="timeline-section" id="historia">
+    <section class="hero-features">
         <div class="container">
-            <h2 class="section-title text-white reveal">Nuestra Historia</h2>
-            <p class="section-description light reveal">Hitos que marcaron el rumbo de nuestra institución hasta convertirnos en lo que somos hoy.</p>
+            <div class="features-grid">
+                <article class="feature-card reveal">
+                    <div class="feature-badge">Eventos recientes</div>
+                    <h3>Diplomado en Transformación Sostenible</h3>
+                    <p>18 de julio de 2026 · Aula Magna</p>
+                    <a href="#" class="feature-link">Leer más ›</a>
+                </article>
+                <article class="feature-card reveal">
+                    <div class="feature-badge">Noticias</div>
+                    <h3>Reconocidos como sede de innovación</h3>
+                    <p>UNPHU fue destacada por su liderazgo en investigación y campus sostenible.</p>
+                    <a href="#" class="feature-link">Leer más ›</a>
+                </article>
+                <article class="feature-card reveal">
+                    <div class="feature-badge">Estudiantes</div>
+                    <h3>Vida universitaria activa</h3>
+                    <p>Descubre los espacios y programas que hacen de Yisuscry una experiencia única.</p>
+                    <a href="#" class="feature-link">Leer más ›</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="history-intro" id="historia">
+        <div class="container history-grid">
+            <div class="history-panel reveal-left">
+                <span class="badge-60">Nuestra Historia</span>
+                <h2 class="section-title text-white">Nuestra Historia</h2>
+                <p class="section-description light">Un recorrido enmarcado por los valores verdes de Yisuscry: innovación, compromiso social y crecimiento sostenible durante seis décadas.</p>
+                <div class="history-card">
+                    <h3>60 años de legado</h3>
+                    <p>Desde la fundación hasta hoy, hemos construido una comunidad académica sólida, juntando experiencia y nuevas generaciones en cada etapa.</p>
+                </div>
+            </div>
+            <div class="history-content reveal-right">
+                <p>Después de la caída, en 1961, del régimen dictatorial que marcó profundamente la historia nacional, un grupo de empresarios y académicos se unió para crear una universidad distinta: una plataforma abierta a la innovación, la inclusión y la excelencia.</p>
+                <p>Con el paso de los años, Yisuscry fortaleció su identidad con programas de alta calidad, alianzas internacionales y un fuerte compromiso con la comunidad. Hoy celebramos 60 años siendo un motor de transformación, con más de 100,000 egresados y una visión clara hacia el futuro.</p>
+                <div class="history-stats-grid">
+                    <div class="history-stat">
+                        <span>+100k</span>
+                        <p>Egresados con impacto</p>
+                    </div>
+                    <div class="history-stat">
+                        <span>45</span>
+                        <p>Alianzas internacionales</p>
+                    </div>
+                    <div class="history-stat">
+                        <span>60</span>
+                        <p>Años de trayectoria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <h2 class="section-title text-white reveal">Línea del Tiempo</h2>
+            <p class="section-description light reveal">Los hitos que definieron nuestra evolución, desde los primeros pasos hasta el aniversario número 60.</p>
             
             <div class="timeline-wrapper">
                 <div class="timeline-horizontal">
@@ -102,7 +170,7 @@
             <div class="rector-content reveal-right">
                 <!-- Se quitó el style inline; la clase badge-60 maneja el contexto premium de manera inteligente -->
                 <span class="badge-60">Palabras de Bienvenida</span>
-                <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">El valor de nuestra historia, <br>el poder de nuestro futuro.</h2>
+                <h2 class="section-title section-title-left">El valor de nuestra historia, <br>el poder de nuestro futuro.</h2>
                 
                 <p>A nuestra querida comunidad Yisuscry:</p>
                 <p>Llegar a este 60 aniversario no es solo marcar una fecha en el calendario; es celebrar seis décadas de resiliencia, innovación y, sobre todo, del profundo impacto que nuestros egresados han tenido en la sociedad...</p>
@@ -164,8 +232,8 @@
     <section class="hall-of-fame" id="hall-of-fame">
         <div class="container relative">
             <div class="hof-header">
-                <h2 class="section-title text-white" style="text-align: left; margin-bottom: 10px;">Hall of Fame</h2>
-                <p class="section-description light" style="text-align: left; margin: 0 0 30px 0;">Egresados que transforman el mundo con su liderazgo y visión.</p>
+                <h2 class="section-title text-white section-title-left">Hall of Fame</h2>
+                <p class="section-description light section-description-left">Egresados que transforman el mundo con su liderazgo y visión.</p>
                 
                 <div class="carousel-controls">
                     <button id="prevBtn" class="carousel-btn" aria-label="Anterior">←</button>
