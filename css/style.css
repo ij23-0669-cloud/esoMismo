@@ -184,6 +184,8 @@ section { padding-top: 60px; padding-bottom: 60px; scroll-margin-top: 60px; }
 .history-card h3 { margin-bottom: 16px; font-size: 1.8rem; color: #f8faf9; }
 .history-card p { color: rgba(0, 0, 0, 0.86); line-height: 1.8; }
 .history-content p { color: rgba(0, 0, 0, 0.92); font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px; }
+.history-intro-box { background-color: rgba(200, 210, 210, 0.35); padding: 24px 32px; border-radius: 32px; margin-bottom: 24px; box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.04); }
+.history-intro-box .section-description.light { margin: 0; color: #4a5568; text-align: left; max-width: 100%; }
 .history-stats-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 16px; }
 
 @media (max-width: 1024px) {
@@ -200,8 +202,9 @@ section { padding-top: 60px; padding-bottom: 60px; scroll-margin-top: 60px; }
     .history-intro .section-title { color: var(--primary); }
     .history-intro .section-description.light { color: var(--primary-dark); }
     .history-intro p { color: var(--text-dark); }
-    .history-intro .history-pdf-btn { background-color: var(--primary); color: white; border-color: transparent; }
+    .history-intro .history-pdf-btn { background-color: var(--primary); color: white; border-color: transparent; align-self: center; }
     .history-intro .history-pdf-btn:hover { background-color: var(--primary-dark); }
+    .history-content { display: flex; flex-direction: column; align-items: center; text-align: center; }
 }
 
 .section-title { text-align: center; font-size: 2.8rem; font-weight: 400; margin-bottom: 16px; position: relative; padding-bottom: 20px; }
